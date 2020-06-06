@@ -16,8 +16,8 @@
             "sliderMax": 100,
             "sliderMin": 0,
             "spriteName": null,
-            "value": 24.519,
-            "visible": true,
+            "value": 37.719,
+            "visible": false,
             "width": 0,
             "x": 5,
             "y": 4
@@ -34,11 +34,11 @@
             "sliderMax": 100,
             "sliderMin": 0,
             "spriteName": null,
-            "value": 2,
+            "value": 24,
             "visible": true,
             "width": 0,
-            "x": 5,
-            "y": 318
+            "x": 0,
+            "y": 16
         },
         {
             "height": 0,
@@ -52,8 +52,8 @@
             "sliderMax": 100,
             "sliderMin": 0,
             "spriteName": "Game",
-            "value": 0.5059999999999993,
-            "visible": true,
+            "value": 0,
+            "visible": false,
             "width": 0,
             "x": 5,
             "y": 30
@@ -70,8 +70,8 @@
             "sliderMax": 100,
             "sliderMin": 0,
             "spriteName": "Game",
-            "value": 6.164,
-            "visible": true,
+            "value": 3.696,
+            "visible": false,
             "width": 0,
             "x": 5,
             "y": 55
@@ -88,8 +88,8 @@
             "sliderMax": 100,
             "sliderMin": 0,
             "spriteName": "Game",
-            "value": 0.5389999999999997,
-            "visible": true,
+            "value": 0.029333333333333676,
+            "visible": false,
             "width": 0,
             "x": 5,
             "y": 80
@@ -107,7 +107,7 @@
             "sliderMin": 0,
             "spriteName": "Game",
             "value": 0.016666666666666666,
-            "visible": true,
+            "visible": false,
             "width": 0,
             "x": 5,
             "y": 105
@@ -125,7 +125,7 @@
             "sliderMin": 0,
             "spriteName": "Game",
             "value": 0.041666666666666664,
-            "visible": true,
+            "visible": false,
             "width": 0,
             "x": 5,
             "y": 129
@@ -142,8 +142,8 @@
             "sliderMax": 100,
             "sliderMin": 0,
             "spriteName": "Game",
-            "value": 0.014000000000000672,
-            "visible": true,
+            "value": 0.012666666666666979,
+            "visible": false,
             "width": 0,
             "x": 5,
             "y": 154
@@ -160,8 +160,8 @@
             "sliderMax": 100,
             "sliderMin": 0,
             "spriteName": "Game",
-            "value": 60,
-            "visible": true,
+            "value": 41,
+            "visible": false,
             "width": 0,
             "x": 5,
             "y": 179
@@ -178,8 +178,8 @@
             "sliderMax": 100,
             "sliderMin": 0,
             "spriteName": "Game",
-            "value": 2,
-            "visible": true,
+            "value": 16,
+            "visible": false,
             "width": 0,
             "x": 5,
             "y": 204
@@ -196,8 +196,8 @@
             "sliderMax": 100,
             "sliderMin": 0,
             "spriteName": null,
-            "value": 1.1639999999999997,
-            "visible": true,
+            "value": 0.6960000000000002,
+            "visible": false,
             "width": 0,
             "x": 5,
             "y": 229
@@ -214,11 +214,11 @@
             "sliderMax": 100,
             "sliderMin": 0,
             "spriteName": null,
-            "value": 61,
+            "value": 60,
             "visible": true,
             "width": 0,
-            "x": 5,
-            "y": 337
+            "x": 0,
+            "y": 0
         }
     ],
     "targets": [
@@ -257,15 +257,15 @@
             "variables": {
                 "[Rfx.n?FJRn,1oS|LU?5": [
                     "_accumulatorSecond",
-                    1.1639999999999997
+                    0.6960000000000002
                 ],
                 "dpMf(]s{Mt-!.o(rr-KU": [
                     "GameTPS",
-                    61
+                    60
                 ],
                 "r9D(FFBCE?J`-I/h)8AD": [
                     "GameFPS",
-                    2
+                    24
                 ]
             },
             "videoState": "on",
@@ -403,7 +403,7 @@
                     },
                     "next": "#QJEgQ.z1xW{nzi/cb(7",
                     "opcode": "data_setvariableto",
-                    "parent": "mO+5LRE1Gdf9;g[yIquv",
+                    "parent": "9}ZAv`j|uKC{);+ly|9r",
                     "shadow": false,
                     "topLevel": false
                 },
@@ -496,6 +496,30 @@
                     "next": null,
                     "opcode": "operator_subtract",
                     "parent": "Ap5}x;=~_oR6W.kRf:w/",
+                    "shadow": false,
+                    "topLevel": false
+                },
+                "9}ZAv`j|uKC{);+ly|9r": {
+                    "fields": {},
+                    "inputs": {
+                        "X": [
+                            1,
+                            [
+                                4,
+                                "0"
+                            ]
+                        ],
+                        "Y": [
+                            1,
+                            [
+                                4,
+                                "0"
+                            ]
+                        ]
+                    },
+                    "next": "1P?k#jIoYBIZZ14EGZ@j",
+                    "opcode": "motion_gotoxy",
+                    "parent": "mO+5LRE1Gdf9;g[yIquv",
                     "shadow": false,
                     "topLevel": false
                 },
@@ -1043,7 +1067,7 @@
                 "mO+5LRE1Gdf9;g[yIquv": {
                     "fields": {},
                     "inputs": {},
-                    "next": "1P?k#jIoYBIZZ14EGZ@j",
+                    "next": "9}ZAv`j|uKC{);+ly|9r",
                     "opcode": "event_whenflagclicked",
                     "parent": null,
                     "shadow": false,
@@ -1303,27 +1327,27 @@
                 ],
                 "3Jx,c{b]/aBavFbTZ`8g": [
                     "_delta",
-                    0.5059999999999993
+                    0
                 ],
                 "7VX,X+?@B.z`?(h+L,ZI": [
                     "_accumulatorUpdate",
-                    0.014000000000000672
+                    0.012666666666666979
                 ],
                 "IajOm;]HF,e;rwNmw1FC": [
                     "_frames",
-                    2
+                    16
                 ],
                 "Lk|9e+v-2~QiSq*FR6^X": [
                     "_updates",
-                    60
+                    41
                 ],
                 "P6|,D@TkL|uB?:)Yb}4j": [
                     "_lastTime",
-                    6.164
+                    3.696
                 ],
                 "l)j*T.BZI[d*5D4mGg95": [
                     "_accumulatorRender",
-                    0.5389999999999997
+                    0.029333333333333676
                 ]
             },
             "visible": true,
