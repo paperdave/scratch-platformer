@@ -34,7 +34,7 @@
             "sliderMax": 100,
             "sliderMin": 0,
             "spriteName": null,
-            "value": 24,
+            "value": 40,
             "visible": true,
             "width": 0,
             "x": 0,
@@ -214,7 +214,7 @@
             "sliderMax": 100,
             "sliderMin": 0,
             "spriteName": null,
-            "value": 60,
+            "value": 104,
             "visible": true,
             "width": 0,
             "x": 0,
@@ -224,7 +224,13 @@
     "targets": [
         {
             "blocks": {},
-            "broadcasts": {},
+            "broadcasts": {
+                "/[SwXF5PG!Cc2^GT[Ox)": "Init",
+                "14z%/PUVkku+i/NNCsd$": "Render Layer Background",
+                "_eGpyS1$CR%p3/[tz(Mm": "Render Layer Main",
+                "t50ene]K4#*oOy0;sxkm": "Update",
+                "v;Y^jx`,DM}[v/not[Ba": "Render Layer GUI"
+            },
             "comments": {},
             "costumes": [
                 {
@@ -257,15 +263,15 @@
             "variables": {
                 "[Rfx.n?FJRn,1oS|LU?5": [
                     "_accumulatorSecond",
-                    0.6960000000000002
+                    0.7490000000000001
                 ],
                 "dpMf(]s{Mt-!.o(rr-KU": [
                     "GameTPS",
-                    60
+                    104
                 ],
                 "r9D(FFBCE?J`-I/h)8AD": [
                     "GameFPS",
-                    24
+                    40
                 ]
             },
             "videoState": "on",
@@ -282,7 +288,7 @@
                             "D-O@JNaR!M|8e-Y}.XiO"
                         ]
                     },
-                    "next": "L2!Q,{qni{DtVP;;s^x$",
+                    "next": "Yd/]Lc#YT+kt4KB@_q0r",
                     "opcode": "procedures_definition",
                     "parent": null,
                     "shadow": false,
@@ -352,7 +358,7 @@
                             ]
                         ]
                     },
-                    "next": null,
+                    "next": "gu7sxp;3hKn;t%U4;?O~",
                     "opcode": "data_changevariableby",
                     "parent": "A?V,Ee=FVkyB6!;Lx+E[",
                     "shadow": false,
@@ -519,7 +525,7 @@
                     },
                     "next": "1P?k#jIoYBIZZ14EGZ@j",
                     "opcode": "motion_gotoxy",
-                    "parent": "mO+5LRE1Gdf9;g[yIquv",
+                    "parent": "ekoFY5=YjDUoGiYD5u;D",
                     "shadow": false,
                     "topLevel": false
                 },
@@ -626,8 +632,8 @@
                     "parent": null,
                     "shadow": false,
                     "topLevel": true,
-                    "x": 219,
-                    "y": -30
+                    "x": 214,
+                    "y": 5
                 },
                 "Ap5}x;=~_oR6W.kRf:w/": {
                     "fields": {
@@ -823,7 +829,7 @@
                     },
                     "next": null,
                     "opcode": "data_changevariableby",
-                    "parent": "!/N^+d{3O?25S$hp2?R!",
+                    "parent": "Yd/]Lc#YT+kt4KB@_q0r",
                     "shadow": false,
                     "topLevel": false
                 },
@@ -846,6 +852,24 @@
                     "next": "E{-g0z:rBHfYX47.OU`v",
                     "opcode": "data_setvariableto",
                     "parent": "@P!C52p@`jZ2aUGv2qAf",
+                    "shadow": false,
+                    "topLevel": false
+                },
+                "V-]q`CHSfq_0Q@S*o%0*": {
+                    "fields": {},
+                    "inputs": {
+                        "BROADCAST_INPUT": [
+                            1,
+                            [
+                                11,
+                                "Render Layer GUI",
+                                "v;Y^jx`,DM}[v/not[Ba"
+                            ]
+                        ]
+                    },
+                    "next": null,
+                    "opcode": "event_broadcast",
+                    "parent": "[0;QGVV(OX-+T#Ir[E%a",
                     "shadow": false,
                     "topLevel": false
                 },
@@ -873,6 +897,42 @@
                     "next": "rSd9U12t8`F!f#Gys%nW",
                     "opcode": "data_setvariableto",
                     "parent": "-!2~)%yc8$^797bS;i=B",
+                    "shadow": false,
+                    "topLevel": false
+                },
+                "Yd/]Lc#YT+kt4KB@_q0r": {
+                    "fields": {},
+                    "inputs": {
+                        "BROADCAST_INPUT": [
+                            1,
+                            [
+                                11,
+                                "Update",
+                                "t50ene]K4#*oOy0;sxkm"
+                            ]
+                        ]
+                    },
+                    "next": "L2!Q,{qni{DtVP;;s^x$",
+                    "opcode": "event_broadcast",
+                    "parent": "!/N^+d{3O?25S$hp2?R!",
+                    "shadow": false,
+                    "topLevel": false
+                },
+                "[0;QGVV(OX-+T#Ir[E%a": {
+                    "fields": {},
+                    "inputs": {
+                        "BROADCAST_INPUT": [
+                            1,
+                            [
+                                11,
+                                "Render Layer Main",
+                                "_eGpyS1$CR%p3/[tz(Mm"
+                            ]
+                        ]
+                    },
+                    "next": "V-]q`CHSfq_0Q@S*o%0*",
+                    "opcode": "event_broadcast",
+                    "parent": "gu7sxp;3hKn;t%U4;?O~",
                     "shadow": false,
                     "topLevel": false
                 },
@@ -989,6 +1049,24 @@
                     "shadow": false,
                     "topLevel": false
                 },
+                "ekoFY5=YjDUoGiYD5u;D": {
+                    "fields": {},
+                    "inputs": {
+                        "BROADCAST_INPUT": [
+                            1,
+                            [
+                                11,
+                                "Init",
+                                "/[SwXF5PG!Cc2^GT[Ox)"
+                            ]
+                        ]
+                    },
+                    "next": "9}ZAv`j|uKC{);+ly|9r",
+                    "opcode": "event_broadcast",
+                    "parent": "mO+5LRE1Gdf9;g[yIquv",
+                    "shadow": false,
+                    "topLevel": false
+                },
                 "em5PLhBhtqSJA6|L=|nu": {
                     "fields": {},
                     "inputs": {
@@ -1046,6 +1124,24 @@
                     "shadow": false,
                     "topLevel": false
                 },
+                "gu7sxp;3hKn;t%U4;?O~": {
+                    "fields": {},
+                    "inputs": {
+                        "BROADCAST_INPUT": [
+                            1,
+                            [
+                                11,
+                                "Render Layer Background",
+                                "14z%/PUVkku+i/NNCsd$"
+                            ]
+                        ]
+                    },
+                    "next": "[0;QGVV(OX-+T#Ir[E%a",
+                    "opcode": "event_broadcast",
+                    "parent": ")d8YI4aQQi_:HG+d[5YQ",
+                    "shadow": false,
+                    "topLevel": false
+                },
                 "m+)byd8yTBMR@b3~Ko]m": {
                     "fields": {},
                     "inputs": {},
@@ -1067,7 +1163,7 @@
                 "mO+5LRE1Gdf9;g[yIquv": {
                     "fields": {},
                     "inputs": {},
-                    "next": "9}ZAv`j|uKC{);+ly|9r",
+                    "next": "ekoFY5=YjDUoGiYD5u;D",
                     "opcode": "event_whenflagclicked",
                     "parent": null,
                     "shadow": false,
@@ -1305,17 +1401,7 @@
             "name": "Game",
             "rotationStyle": "all around",
             "size": 100,
-            "sounds": [
-                {
-                    "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
-                    "dataFormat": "wav",
-                    "format": "",
-                    "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
-                    "name": "pop",
-                    "rate": 44100,
-                    "sampleCount": 1032
-                }
-            ],
+            "sounds": [],
             "variables": {
                 "$^#_4hk:hTq#bg1n1lkK": [
                     "%TIME_PER_UPDATE",
@@ -1331,29 +1417,29 @@
                 ],
                 "7VX,X+?@B.z`?(h+L,ZI": [
                     "_accumulatorUpdate",
-                    0.012666666666666979
+                    0.01566666666666681
                 ],
                 "IajOm;]HF,e;rwNmw1FC": [
                     "_frames",
-                    16
+                    17
                 ],
                 "Lk|9e+v-2~QiSq*FR6^X": [
                     "_updates",
-                    41
+                    43
                 ],
                 "P6|,D@TkL|uB?:)Yb}4j": [
                     "_lastTime",
-                    3.696
+                    1.749
                 ],
                 "l)j*T.BZI[d*5D4mGg95": [
                     "_accumulatorRender",
-                    0.029333333333333676
+                    0.04066666666666686
                 ]
             },
             "visible": true,
             "volume": 100,
-            "x": 36,
-            "y": 28
+            "x": 0,
+            "y": 0
         }
     ]
 }
