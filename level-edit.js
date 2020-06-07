@@ -1,9 +1,28 @@
 #!/usr/bin/node
 // Run with Node.JS
 const fs = require('fs');
-const OBJECTS = [null, null, "_", "#", "#", "x", "X", "^", "|"];
+const OBJECTS = [
+  null, // arrays start at 1 in scratch
+  null, // ghost texture
+  "_",  // blank
+  "#",  // solid, center
+  "#",  // solid, top
+  "#",  // solid, bottom
+  "#",  // solid, top & bottom
+  "x",  // death gradient
+  "X",  // death full block
+  "^",  // one way up
+  "|",  // checkpoint
+];
 
-function getCostume(symbol) {
+function getCostume(symbol, above, below) {
+  if (symbol === '#') {
+    if(above !== '#' && below === '#') return 4;
+    else if(above === '#' && below !== '#') return 5;
+    else if(above !== '#' && below !== '#') return 6;
+    else return 3;
+  }
+  
   const index = OBJECTS.indexOf(symbol);
   if(index === -1) {
     console.log('what is ' + symbol);
@@ -49,7 +68,7 @@ function pack() {
     let string = '';
     for (let i = 0; i < 128; i++) {
       for (let j = 0; j < 32; j++) {
-        string += getCostume(split[j][i]).toString().padStart(2, '0');
+        string += getCostume(split[j][i], (split[j - 1] || [])[i], (split[j + 1] || [])[i]).toString().padStart(2, '0');
       }
     }
     return string;
