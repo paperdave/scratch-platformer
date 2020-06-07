@@ -23,6 +23,7 @@ const COSTUMES = [
   "b",  // green switch
   "G",  // green block on
   "g",  // green block off
+  "O",  // star
 ];
 
 function getCostume(symbol, above, below) {
