@@ -13,7 +13,9 @@ plain text file and a NodeJS program to convert it's format into
 something the scratch program can read, and also handles partial
 auto-tiling. The game can be played [here][GAME]
 
-Written for the "Hack the Northeast" Hackathon.
+Written for the "Hack the Northeast" Hackathon. It was originally in
+a team of four but no one else did anything; that is why I (Dave) do
+not currently own the repository.
 
 [scratch]: https://en.wikipedia.org/wiki/Scratch_(programming_language)
 [GAME]: https://scratch.mit.edu/projects/402547160
