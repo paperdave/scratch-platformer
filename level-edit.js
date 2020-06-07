@@ -1,7 +1,7 @@
 #!/usr/bin/node
 // Run with Node.JS
 const fs = require('fs');
-const OBJECTS = [
+const COSTUMES = [
   null, // arrays start at 1 in scratch
   null, // ghost texture
   "_",  // blank
@@ -10,9 +10,19 @@ const OBJECTS = [
   "#",  // solid, bottom
   "#",  // solid, top & bottom
   "x",  // death gradient
-  "X",  // death full block
+  "X",  // death spike up
+  "X",  // death spike down
   "^",  // one way up
+  "v",  // one way down
+  "<",  // one way left
+  ">",  // one way right
   "|",  // checkpoint
+  "f",  // red switch
+  "R",  // red block on
+  "r",  // red block off
+  "b",  // green switch
+  "G",  // green block on
+  "g",  // green block off
 ];
 
 function getCostume(symbol, above, below) {
@@ -22,8 +32,14 @@ function getCostume(symbol, above, below) {
     else if(above !== '#' && below !== '#') return 6;
     else return 3;
   }
+  if (symbol === 'X') {
+    if(above !== '#' && below === '#') return 8;
+    else if(above === '#' && below !== '#') return 9;
+    else if(above !== '#' && below !== '#') return 8;
+    else return 8;
+  }
   
-  const index = OBJECTS.indexOf(symbol);
+  const index = COSTUMES.indexOf(symbol);
   if(index === -1) {
     console.log('what is ' + symbol);
     return 2;
@@ -45,7 +61,7 @@ function unpack() {
   let data = '';
   for (let i = 0; i < cols.length; i += 128) {
     for (let j = 0; j < 32; j++) {
-      data += cols.slice(i, i+128).map(x => OBJECTS[x[j]]).join('') + '\n';    
+      data += cols.slice(i, i+128).map(x => COSTUMES[x[j]]).join('') + '\n';    
     }
     data += '\n\n';
   }
