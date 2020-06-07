@@ -33907,12 +33907,12 @@
             "comments": {
                 "FY1h)Bo-3w{W!Kz~:;]5": {
                     "blockId": null,
-                    "height": 200,
+                    "height": 559.9999847412109,
                     "minimized": false,
-                    "text": "keep this section focused to increase performance (having the blocks visible will decrease it)",
-                    "width": 200,
-                    "x": 391,
-                    "y": 36
+                    "text": "",
+                    "width": 552.5925903320312,
+                    "x": 380.6296296296296,
+                    "y": -54.37037037037037
                 }
             },
             "costumes": [
@@ -37874,7 +37874,7 @@
                         "_Blank",
                         "_Blank",
                         "_Blank",
-                        "#TopBottom",
+                        "_Blank",
                         "_Blank",
                         "_Blank",
                         "_Blank",
@@ -37906,7 +37906,7 @@
                         "_Blank",
                         "_Blank",
                         "_Blank",
-                        "#TopBottom",
+                        "_Blank",
                         "_Blank",
                         "_Blank",
                         "_Blank",
@@ -44881,8 +44881,8 @@
                         "#Center",
                         "#Center",
                         "#Bottom",
-                        "_Blank",
-                        "_Blank",
+                        "rBlock",
+                        "rBlock",
                         "#Top",
                         "#Center",
                         "#Bottom",
@@ -45334,7 +45334,7 @@
                         "#Top",
                         "#Center",
                         "#Bottom",
-                        "_Blank",
+                        "fSwitch",
                         "_Blank",
                         "_Blank",
                         "#Top",
@@ -48453,11 +48453,11 @@
                 ],
                 "7VX,X+?@B.z`?(h+L,ZI": [
                     "_accumulatorUpdate",
-                    0.009333333333333346
+                    0.007666666666666717
                 ],
                 "=GznM@W:Kv))I5t75r;s": [
                     "_accumulatorSecond",
-                    0.726
+                    0.891
                 ],
                 "@3QEhZ23M6qP,dAjr(]T": [
                     "_objToAdd",
@@ -48465,19 +48465,19 @@
                 ],
                 "IajOm;]HF,e;rwNmw1FC": [
                     "_frames",
-                    32
+                    29
                 ],
                 "Lk|9e+v-2~QiSq*FR6^X": [
                     "_updates",
-                    69
+                    61
                 ],
                 "P6|,D@TkL|uB?:)Yb}4j": [
                     "_lastTime",
-                    0.726
+                    0.891
                 ],
                 "l)j*T.BZI[d*5D4mGg95": [
                     "_accumulatorRender",
-                    0.02600000000000003
+                    0.0243333333333334
                 ]
             },
             "visible": false,
