@@ -38384,7 +38384,7 @@
                         "_Blank",
                         "_Blank",
                         "_Blank",
-                        "_StarTaken",
+                        "SStar",
                         "_Blank",
                         "#TopBottom",
                         "_Blank",
@@ -46173,23 +46173,23 @@
                 ],
                 "Qu9G?ETxt+.S)(TE_8{c": [
                     "CameraRealX",
-                    3167.0800000000045
+                    3352.001800718349
                 ],
                 "R8?[*sh}%rj{0@HNJ#8p": [
                     "CameraRealY",
-                    -268.4749254780678
+                    "-454"
                 ],
                 "^MtA.d5#;i@B$;z!A)-q": [
                     "Deaths",
-                    5
+                    "0"
                 ],
                 "_p_eqMp;va+2|/X!#b}%": [
                     "Stars",
-                    1
+                    "0"
                 ],
                 "dpMf(]s{Mt-!.o(rr-KU": [
                     "TPS",
-                    59
+                    60
                 ],
                 "gh,cmi4YI9y)nueBewJu": [
                     "Sprites",
@@ -46201,7 +46201,7 @@
                 ],
                 "q,{FW5CZe:9-s}evuG1z": [
                     "PlayerCheckpointX",
-                    144
+                    "144"
                 ],
                 "r9D(FFBCE?J`-I/h)8AD": [
                     "FPS",
@@ -46213,11 +46213,11 @@
                 ],
                 "xp}^((x]EmW}uTX9@U$f": [
                     "CameraY",
-                    -268.4749254780678
+                    "-454"
                 ],
                 "z}O40WFu$N7Myf|Dj]0,": [
                     "CameraX",
-                    3167.0800000000045
+                    3352.001800718349
                 ]
             },
             "videoState": "on",
@@ -46849,6 +46849,20 @@
                     "shadow": false,
                     "topLevel": false
                 },
+                "@uelZkm.1_$z+jR`N89`": {
+                    "fields": {},
+                    "inputs": {
+                        "OPERAND": [
+                            2,
+                            "nbGz4cn3K55^~I8t,b|l"
+                        ]
+                    },
+                    "next": null,
+                    "opcode": "operator_not",
+                    "parent": "GEI4q7eTI+HhTNpU[gc?",
+                    "shadow": false,
+                    "topLevel": false
+                },
                 "A!siim]Yo2eI$[icYfr)": {
                     "fields": {
                         "VARIABLE": [
@@ -47059,6 +47073,24 @@
                     "x": 1143,
                     "y": -174
                 },
+                "GEI4q7eTI+HhTNpU[gc?": {
+                    "fields": {},
+                    "inputs": {
+                        "CONDITION": [
+                            2,
+                            "@uelZkm.1_$z+jR`N89`"
+                        ],
+                        "SUBSTACK": [
+                            2,
+                            "`6[@F/3!~4Jt!3SlM6fZ"
+                        ]
+                    },
+                    "next": null,
+                    "opcode": "control_repeat_until",
+                    "parent": "n@zgc?!1RVUES%Jyv7Ci",
+                    "shadow": false,
+                    "topLevel": false
+                },
                 "H+R6^I(?j.vkY*i2:2-u": {
                     "fields": {},
                     "inputs": {
@@ -47103,6 +47135,28 @@
                     "next": "bjtvHd0{7E=Y0z]Loz4[",
                     "opcode": "control_if",
                     "parent": "oT2:[Pkpel{K-9l0LtHu",
+                    "shadow": false,
+                    "topLevel": false
+                },
+                "H`2+P^sK,D9CSB2Q_6T]": {
+                    "fields": {
+                        "LIST": [
+                            "Tilemap",
+                            "gD*P%PHza|H{96mR(Qy6"
+                        ]
+                    },
+                    "inputs": {
+                        "ITEM": [
+                            1,
+                            [
+                                10,
+                                "_StarTaken"
+                            ]
+                        ]
+                    },
+                    "next": null,
+                    "opcode": "data_itemnumoflist",
+                    "parent": "`6[@F/3!~4Jt!3SlM6fZ",
                     "shadow": false,
                     "topLevel": false
                 },
@@ -47469,6 +47523,36 @@
                     "shadow": false,
                     "topLevel": false
                 },
+                "`6[@F/3!~4Jt!3SlM6fZ": {
+                    "fields": {
+                        "LIST": [
+                            "Tilemap",
+                            "gD*P%PHza|H{96mR(Qy6"
+                        ]
+                    },
+                    "inputs": {
+                        "INDEX": [
+                            3,
+                            "H`2+P^sK,D9CSB2Q_6T]",
+                            [
+                                7,
+                                "1"
+                            ]
+                        ],
+                        "ITEM": [
+                            1,
+                            [
+                                10,
+                                "SStar"
+                            ]
+                        ]
+                    },
+                    "next": null,
+                    "opcode": "data_replaceitemoflist",
+                    "parent": "GEI4q7eTI+HhTNpU[gc?",
+                    "shadow": false,
+                    "topLevel": false
+                },
                 "`9${7ZUIHcP}_B5l@qzp": {
                     "fields": {
                         "STOP_OPTION": [
@@ -47717,9 +47801,31 @@
                             ]
                         ]
                     },
-                    "next": null,
+                    "next": "GEI4q7eTI+HhTNpU[gc?",
                     "opcode": "data_setvariableto",
                     "parent": ")Bk0ulmdqlG.[N`-OsGf",
+                    "shadow": false,
+                    "topLevel": false
+                },
+                "nbGz4cn3K55^~I8t,b|l": {
+                    "fields": {
+                        "LIST": [
+                            "Tilemap",
+                            "gD*P%PHza|H{96mR(Qy6"
+                        ]
+                    },
+                    "inputs": {
+                        "ITEM": [
+                            1,
+                            [
+                                10,
+                                "_StarTaken"
+                            ]
+                        ]
+                    },
+                    "next": null,
+                    "opcode": "data_listcontainsitem",
+                    "parent": "@uelZkm.1_$z+jR`N89`",
                     "shadow": false,
                     "topLevel": false
                 },
@@ -48109,15 +48215,15 @@
                 ],
                 "3Jx,c{b]/aBavFbTZ`8g": [
                     "_delta",
-                    0.03600000000005821
+                    0
                 ],
                 "7VX,X+?@B.z`?(h+L,ZI": [
                     "_accumulatorUpdate",
-                    0.0030000000029314494
+                    0.002666666666666803
                 ],
                 "=GznM@W:Kv))I5t75r;s": [
                     "_accumulatorSecond",
-                    0.803000000000111
+                    0.03600000000000003
                 ],
                 "@3QEhZ23M6qP,dAjr(]T": [
                     "_objToAdd",
@@ -48125,19 +48231,19 @@
                 ],
                 "IajOm;]HF,e;rwNmw1FC": [
                     "_frames",
-                    20
+                    "0"
                 ],
                 "Lk|9e+v-2~QiSq*FR6^X": [
                     "_updates",
-                    48
+                    2
                 ],
                 "P6|,D@TkL|uB?:)Yb}4j": [
                     "_lastTime",
-                    1667.803
+                    3.036
                 ],
                 "l)j*T.BZI[d*5D4mGg95": [
                     "_accumulatorRender",
-                    0.0337692307692751
+                    0.035999999999999865
                 ]
             },
             "visible": false,
@@ -49790,11 +49896,11 @@
             "variables": {
                 "P,!T^QvQwF=^REk2QuG2": [
                     "_shakeAmp",
-                    "20"
+                    "0"
                 ],
                 "QFJP/voHluYJXNK!hDNA": [
                     "_shakeRemain",
-                    1.3322676295501878e-15
+                    "0"
                 ]
             },
             "visible": false,
@@ -52933,7 +53039,7 @@
             "variables": {
                 "+M%w4fjn)gNwwK-;{TDo": [
                     "_tx",
-                    131
+                    139
                 ],
                 ".Rvk1|v$uLp[cDc%We^P": [
                     "_exportStr",
@@ -52941,7 +53047,7 @@
                 ],
                 "8lv}`Mkqgi,cQoYrxhcY": [
                     "_ty",
-                    24
+                    31
                 ],
                 "FZYS:l^htU$f0]lu8hj.": [
                     "_i",
@@ -52949,13 +53055,13 @@
                 ],
                 "[emf(b/,bW0.cx.0LRKY": [
                     "_tile",
-                    "_Blank"
+                    "#Bottom"
                 ]
             },
             "visible": true,
             "volume": 100,
-            "x": -230,
-            "y": -179.5250745219322
+            "x": -228.0019952557882,
+            "y": -162
         },
         {
             "blocks": {},
@@ -54020,7 +54126,7 @@
                     "rotationCenterY": 360
                 }
             ],
-            "currentCostume": 2,
+            "currentCostume": 9,
             "direction": 90,
             "draggable": false,
             "isStage": false,
