@@ -13,6 +13,7 @@ const COSTUMES = [
   "X",  // death spike up
   "X",  // death spike down
   "^",  // one way up
+  "&",  // one way red on
   "v",  // one way down
   "<",  // one way left
   ">",  // one way right
@@ -24,6 +25,7 @@ const COSTUMES = [
   "G",  // green block on
   "g",  // green block off
   "O",  // star
+  "E",  // return to main
 ];
 
 function getCostume(symbol, above, below) {
